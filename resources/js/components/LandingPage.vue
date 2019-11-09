@@ -1,21 +1,10 @@
 <template>
-    <div class="container-fluid">
-        <testresource/>
-    </div>
+    <v-container>
+        <div class="row">
+            <div class="col-lg-4">
+                <h2>user name</h2>
+                <v-divider></v-divider>
+            </div>
+        </div>
+    </v-container>
 </template>
-
- <script>
-
-import login from "./Login.vue"
-import home from "./Home.vue"
-import register from "./Register.vue"
-import testresource from "./testresources.vue"
-export default {
-    components: {
-        login,
-        home,
-        register,
-        testresource,
-    }
-}
-</script>
