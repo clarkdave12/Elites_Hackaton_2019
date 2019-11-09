@@ -4,7 +4,7 @@
 
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar " id="nv">
 	    <div class="container">
-			<v-btn @click="drawer = !drawer">
+			<v-btn  @click="drawer = !drawer">
 				=
 			</v-btn>
 	      <img src="http://localhost:8000/images/logo.png" id="brand">
@@ -60,155 +60,34 @@
 		</v-list-item>
 	</v-navigation-drawer>
 
-
-	  <section class="ftco-section goto-here pb-0">
-	  	<div class="container">
-	  		<div class="row">
-	  			<div class="col-md-12 heading-title">
-	          		<h1>Basic Elements</h1>
-	        	</div>
-	  		</div>
-	  	</div>
-  	</section>
-
-	  <section class="ftco-section" id="buttons">
-			<div class="container">
-				<div class="row mb-5">
-					<div class="col-md-12">
-						<h2 class="heading-section">Buttons <br>
-							<small>Pick your style</small>
-						</h2>
-					</div>
-					<div class="col-md-12">
-						<button type="button" class="btn btn-primary">Default</button>
-            <button type="button" class="btn btn-primary btn-round">Round</button>
-            <button type="button" class="btn btn-primary btn-round">
-              <i class="ion-ios-heart"></i> With Icon
-            </button>
-            <button type="button" class="btn btn-primary btn-fab btn-round">
-              <i class="ion-ios-heart"></i>
-            </button>
-            <button type="button" class="btn btn-link">Simple</button>
+	<div class="container" id="comments">
+		<div class="row">
+			<div class="col-lg-3"></div>
+			<div class="col-lg-6 px-3 py-3 my-2" id="blocks">
+				<h5 class="user-name"> User name </h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, quos consectetur harum quis ducimus facere assumenda at fuga suscipit recusandae voluptatibus omnis ab earum adipisci sit vero rerum laudantium rem.</p>
+				<v-divider></v-divider>
+				<div class="row">
+					<div class="col-lg-4">
+						<button class="comment-button" @click="toggleComments"> {{ buttonLabel }} </button>
 					</div>
 				</div>
 
-				<div class="row mb-5">
-					<div class="col-md-12">
-						<h2 class="heading-section">
-							<small>Pick your size</small>
-						</h2>
-					</div>
-					<div class="col-md-12 mb-3">
-						<button type="button" class="btn btn-primary btn-sm">Small Size</button>
-            <button type="button" class="btn btn-primary">Regular Size</button>
-            <button type="button" class="btn btn-primary btn-lg">Large Size</button>
-					</div>
-					<div class="col-md-12">
-						<button type="button" class="btn btn-outline-primary btn-sm">Small Size</button>
-            <button type="button" class="btn btn-outline-primary">Regular Size</button>
-            <button type="button" class="btn btn-outline-primary btn-lg">Large Size</button>
-					</div>
-				</div>
-				
-				<div class="row mb-5">
-					<div class="col-md-12">
-						<h2 class="heading-section">
-							<small>Pick your color</small>
-						</h2>
-					</div>
-					<div class="col-md-12 mb-3">
-            <button type="button" class="btn btn-primary">Primary</button>
-						<button type="button" class="btn btn-success">Success</button>
-						<button type="button" class="btn btn-danger">Danger</button>
-						<button type="button" class="btn btn-warning">Warning</button>
-						<button type="button" class="btn btn-info">Info</button>
-						<button type="button" class="btn btn-light">Light</button>
-						<button type="button" class="btn btn-dark">Dark</button>
-					</div>
-					<div class="col-md-12">
-            <button type="button" class="btn btn-outline-primary">Primary</button>
-						<button type="button" class="btn btn-outline-success">Success</button>
-						<button type="button" class="btn btn-outline-danger">Danger</button>
-						<button type="button" class="btn btn-outline-warning">Warning</button>
-						<button type="button" class="btn btn-outline-info">Info</button>
-						<button type="button" class="btn btn-outline-light">Light</button>
-						<button type="button" class="btn btn-outline-dark">Dark</button>
-					</div>
-				</div>
-
-				<div class="row mb-5">
-					<div class="col-md-12">
-						<h2 class="heading-section">
-							<small>Links</small>
-						</h2>
-					</div>
-					<div class="col-md-12 mb-2">
-            <a href="#" class="btn btn-primary btn-link" role="button">Primary link</a>
-            <a href="#" class="btn btn-secondary btn-link" role="button">Secondary link</a>
-            <a href="#" class="btn btn-success btn-link" role="button">Success link</a>
-						<a href="#" class="btn btn-danger btn-link" role="button">Danger link</a>
-						<a href="#" class="btn btn-warning btn-link" role="button">Warning link</a>
-						<a href="#" class="btn btn-info btn-link" role="button">Info link</a>
-						<a href="#" class="btn btn-dark btn-link" role="button">Dark link</a>
-					</div>
-				</div>
-
-				<div class="row mb-5">
-					<div class="col-md-12">
-						<h2 class="heading-section">
-							<small>Buttons with Dropdown</small>
-						</h2>
-					</div>
-					<div class="col-md-12 mb-2">
-            <div class="dropdown d-inline-block">
-						  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Dropdown button
-						  </button>
-						  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-						    <a class="dropdown-item" href="#">Action</a>
-						    <a class="dropdown-item" href="#">Another action</a>
-						    <a class="dropdown-item" href="#">Something else here</a>
-						  </div>
+				<!-- Actual comment -->
+				<v-divider></v-divider>
+				<div v-if="commentShow">
+					<h6> <strong> Comments: </strong> </h6>
+					<div class="row">
+						<div class="col-lg-12">
+							<header> <strong> Name of the commentor </strong> </header>
+							this is the comment Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus provident quidem fuga repellendus! Animi pariatur voluptatem, excepturi expedita modi sapiente aperiam soluta. Facere nobis ad neque reprehenderit commodi enim dolor.
 						</div>
-						<div class="dropdown d-inline-block">
-						  <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Dropdown button
-						  </button>
-						  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-						    <a class="dropdown-item" href="#">Action</a>
-						    <a class="dropdown-item" href="#">Another action</a>
-						    <a class="dropdown-item" href="#">Something else here</a>
-						  </div>
-						</div>
-						<div class="dropdown d-inline-block">
-						  <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Dropdown button
-						  </button>
-						  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-						    <a class="dropdown-item" href="#">Action</a>
-						    <a class="dropdown-item" href="#">Another action</a>
-						    <a class="dropdown-item" href="#">Something else here</a>
-						  </div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row mb-5">
-					<div class="col-md-12">
-						<h2 class="heading-section">
-							<small>Block Level Buttons</small>
-						</h2>
-					</div>
-					<div class="col-md-4 mb-2">
-            <button type="button" class="btn btn-warning btn-lg btn-block">Block Level info</button>
-						<button type="button" class="btn btn-info btn-lg btn-block">Block Level Success</button>
 					</div>
 				</div>
 			</div>
-	  </section>
-	  <!-- - - - - -end- - - - -  -->
-
-
+			<div class="col-lg-3"></div>
+		</div>
+	</div>
 </div>
 </template>
 
@@ -216,13 +95,55 @@
 export default {
 	data () {
 		return {
-			drawer : false
+			drawer : false,
+			commentShow: false,
+			buttonLabel: 'Show comments'
+		}
+	},
+
+	methods: {
+		toggleComments() {
+			if(!this.commentShow) {
+				this.commentShow = true
+				this.buttonLabel = 'Hide comments'
+			}
+			else {
+				this.commentShow = false
+				this.buttonLabel = 'Show comments'
+			}
 		}
 	}
 }
 </script>
 
 <style scope>
+/* 
+#comments {
+	margin-top: -150px;
+} */
+
+.comment-button {
+	background: none;
+	border: 1px solid black;
+	color: black;
+	border-radius: 50px;
+	padding: 5px 10px;
+}
+
+.comment-button:hover {
+	background: skyblue;
+	border: none;
+
+}
+
+.user-name {
+	color:black;
+}
+
+#blocks {
+	background: skyblue;
+}
+
 #nv {
 	background: red;
 }
@@ -235,4 +156,7 @@ export default {
 	background: black;
 	color: white;
 }
+
+
+
 </style>
