@@ -49,6 +49,23 @@
             })();
         </script>
         <!-- End of ChatBot code -->
+
+        <!-- From Dan -->
+        <script src="{{ asset('js/jquery.min.js')}}"></script>
+        <script src="{{ asset('js/jquery-migrate-3.0.1.min.js')}}"></script>
+        <script src="{{ asset('js/popper.min.js')}}"></script>
+        <script src="{{ asset('js/bootstrap.min.js')}}"></script>
+        <script src="{{ asset('js/jquery.easing.1.3.js')}}"></script>
+        <script src="{{ asset('js/jquery.waypoints.min.js')}}"></script>
+        <script src="{{ asset('js/jquery.stellar.min.js')}}"></script>
+        <script src="{{ asset('js/owl.carousel.min.js')}}"></script>
+        <script src="{{ asset('js/jquery.magnific-popup.min.js')}}"></script>
+        <script src="{{ asset('js/aos.js')}}"></script>
+
+        <script src="{{ asset('js/nouislider.min.js')}}"></script>
+        <script src="{{ asset('js/moment-with-locales.min.js')}}"></script>
+        <script src="{{ asset('js/bootstrap-datetimepicker.min.js')}}"></script>
+        <script src="{{ asset('js/main.js')}}"></script>
                 
     </body>
 </html>
