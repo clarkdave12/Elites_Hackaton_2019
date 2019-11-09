@@ -60,13 +60,34 @@
 		</v-list-item>
 	</v-navigation-drawer>
 
-<div class="main-newsfeed">
-	<div>
-		<a>Name</a>
+	<div class="container" id="comments">
+		<div class="row">
+			<div class="col-lg-3"></div>
+			<div class="col-lg-6 px-3 py-3 my-2" id="blocks">
+				<h5 class="user-name"> User name </h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, quos consectetur harum quis ducimus facere assumenda at fuga suscipit recusandae voluptatibus omnis ab earum adipisci sit vero rerum laudantium rem.</p>
+				<v-divider></v-divider>
+				<div class="row">
+					<div class="col-lg-4">
+						<button class="comment-button" @click="toggleComments"> {{ buttonLabel }} </button>
+					</div>
+				</div>
+
+				<!-- Actual comment -->
+				<v-divider></v-divider>
+				<div v-if="commentShow">
+					<h6> <strong> Comments: </strong> </h6>
+					<div class="row">
+						<div class="col-lg-12">
+							<header> <strong> Name of the commentor </strong> </header>
+							this is the comment Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus provident quidem fuga repellendus! Animi pariatur voluptatem, excepturi expedita modi sapiente aperiam soluta. Facere nobis ad neque reprehenderit commodi enim dolor.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3"></div>
+		</div>
 	</div>
-
-</div>
-
 </div>
 </template>
 
@@ -74,13 +95,55 @@
 export default {
 	data () {
 		return {
-			drawer : false
+			drawer : false,
+			commentShow: false,
+			buttonLabel: 'Show comments'
+		}
+	},
+
+	methods: {
+		toggleComments() {
+			if(!this.commentShow) {
+				this.commentShow = true
+				this.buttonLabel = 'Hide comments'
+			}
+			else {
+				this.commentShow = false
+				this.buttonLabel = 'Show comments'
+			}
 		}
 	}
 }
 </script>
 
 <style scope>
+/* 
+#comments {
+	margin-top: -150px;
+} */
+
+.comment-button {
+	background: none;
+	border: 1px solid black;
+	color: black;
+	border-radius: 50px;
+	padding: 5px 10px;
+}
+
+.comment-button:hover {
+	background: skyblue;
+	border: none;
+
+}
+
+.user-name {
+	color:black;
+}
+
+#blocks {
+	background: skyblue;
+}
+
 #nv {
 	background: red;
 }
