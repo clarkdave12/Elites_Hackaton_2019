@@ -9,7 +9,7 @@
         <link rel="stylesheet" href=" {{ asset('css/app.css') }} ">
 
         <!-- from dan -->
-        link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="{{ asset('css/open-iconic-bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{ asset('css/animate.css')}}">

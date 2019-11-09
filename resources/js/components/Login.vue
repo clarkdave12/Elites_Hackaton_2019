@@ -7,18 +7,18 @@
                 <div class="card">
                     <div class="card-header">Login</div>
                     <div class="card-body">
-                        <form @submit.prevent="login()">
+                        <form>
                             <div class="form-group row">
                                 <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
                                 <div class="col-md-6">
-                                    <input v-model="user.email" type="text" id="email_address" class="form-control" name="email-address" required autofocus>
+                                    <input type="text" id="email_address" class="form-control" name="email-address" required autofocus>
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
                                 <div class="col-md-6">
-                                    <input v-model="user.password" type="password" id="password" class="form-control" name="password" required>
+                                    <input  type="password" id="password" class="form-control" name="password" required>
                                 </div>
                             </div>
 

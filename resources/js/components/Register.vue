@@ -4,44 +4,44 @@
 <div class="col-md-6">
 <div class="card">
 <header class="card-header">
-    <router-link to="Login.vue" class="float-right btn btn-outline-primary mt-1">Login</router-link>
+    <router-link to="" class="float-right btn btn-outline-primary mt-1">Login</router-link>
 	<h4 class="card-title mt-2">Sign up</h4>
 </header>
 <article class="card-body">
-<form @submit.prevent="register()">
+<form>
 	<div class="form-row">
 		<div class="col form-group">
 			<label>First name </label>   
-		  	<input type="text" class="form-control" placeholder="" v-model="user.firstname">
+		  	<input type="text" class="form-control" placeholder="">
 		</div> <!-- form-group end.// -->
 		<div class="col form-group">
 			<label>Last name</label>
-		  	<input type="text" class="form-control" placeholder=" " v-model="user.lastname">
+		  	<input type="text" class="form-control" placeholder="">
 		</div> <!-- form-group end.// -->
 	</div> <!-- form-row end.// -->
 	<div class="form-group">
 		<label>Email address</label>
-		<input type="email" class="form-control" placeholder="" v-model="user.email">
+		<input type="email" class="form-control" placeholder="">
 		<small class="form-text text-muted">We'll never share your email with anyone else.</small>
 	</div> <!-- form-group end.// -->
 	<div class="form-group">
 			<label class="form-check form-check-inline">
-		  <input class="form-check-input" type="radio" name="gender" value="option1" @click="user.gender = 'male'">
+		  <input class="form-check-input" type="radio" name="gender" value="option1">
 		  <span class="form-check-label"> Male </span>
 		</label>
 		<label class="form-check form-check-inline">
-		  <input class="form-check-input" type="radio" name="gender" value="option2" @click="user.gender = 'female'">
+		  <input class="form-check-input" type="radio" name="gender" value="option2">
 		  <span class="form-check-label"> Female</span>
 		</label>
 	</div> <!-- form-group end.// -->
     <div class="form-group">
 		<label>Street</label>
-		<input type="text" class="form-control" placeholder="" v-model="user.street">
+		<input type="text" class="form-control" placeholder="">
 	</div>
 	<div class="form-row">
 		<div class="form-group col-md-6">
 		  <label>City</label>
-		  <input type="text" class="form-control" v-model="user.city">
+		  <input type="text" class="form-control">
 		</div> <!-- form-group end.// -->
 		<div class="form-group col-md-6">
 		  <label>Country</label>
@@ -53,7 +53,7 @@
 	</div> <!-- form-row.// -->
 	<div class="form-group">
 		<label>Create password</label>
-	    <input class="form-control" type="password" v-model="user.password">
+	    <input class="form-control" type="password">
 	</div> <!-- form-group end.// -->  
     <div class="form-group">
         <button type="submit" class="btn btn-primary btn-block"> Register  </button>
