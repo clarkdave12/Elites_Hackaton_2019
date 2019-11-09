@@ -6,6 +6,7 @@
 
 <style scoped>
  #bg{
-     background: url('http://localhost:8000/images/bg_1.jpg');
+     /* background: url('http://localhost:8000/images/bg_1.jpg'); */
+     background-image: linear-gradient(white);
  }
 </style>

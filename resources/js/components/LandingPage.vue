@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid">
-        <testresource/>
+        <profile/>
     </div>
 </template>
 
@@ -10,12 +10,14 @@ import login from "./Login.vue"
 import home from "./Home.vue"
 import register from "./Register.vue"
 import testresource from "./testresources.vue"
+import profile from "./profile.vue"
 export default {
     components: {
         login,
         home,
         register,
         testresource,
+        profile,
     }
 }
 </script>

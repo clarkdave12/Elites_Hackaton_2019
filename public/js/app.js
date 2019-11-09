@@ -1842,12 +1842,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Home_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Home.vue */ "./resources/js/components/Home.vue");
 /* harmony import */ var _Register_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Register.vue */ "./resources/js/components/Register.vue");
 /* harmony import */ var _testresources_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./testresources.vue */ "./resources/js/components/testresources.vue");
+/* harmony import */ var _profile_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./profile.vue */ "./resources/js/components/profile.vue");
 //
 //
 //
 //
 //
 //
+
 
 
 
@@ -1857,7 +1859,8 @@ __webpack_require__.r(__webpack_exports__);
     login: _Login_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
     home: _Home_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
     register: _Register_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
-    testresource: _testresources_vue__WEBPACK_IMPORTED_MODULE_3__["default"]
+    testresource: _testresources_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
+    profile: _profile_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
   }
 });
 
@@ -6572,7 +6575,26 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#bg[data-v-736a0b0d]{\n    background: url('http://localhost:8000/images/bg_1.jpg');\n}\n", ""]);
+exports.push([module.i, "\n#bg[data-v-736a0b0d]{\n    /* background: url('http://localhost:8000/images/bg_1.jpg'); */\n    background-image: -webkit-gradient(linear, left top, left bottom, from(white));\n    background-image: linear-gradient(white);\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/profile.vue?vue&type=style&index=0&id=7eab0eae&scoped=true&lang=css&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/profile.vue?vue&type=style&index=0&id=7eab0eae&scoped=true&lang=css& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.entry[data-v-7eab0eae]{\n    -webkit-box-pack: center;\n            justify-content: center;\n}\n.FA[data-v-7eab0eae]{\n    color:black;\n}\n\n", ""]);
 
 // exports
 
@@ -37516,6 +37538,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/profile.vue?vue&type=style&index=0&id=7eab0eae&scoped=true&lang=css&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/profile.vue?vue&type=style&index=0&id=7eab0eae&scoped=true&lang=css& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./profile.vue?vue&type=style&index=0&id=7eab0eae&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/profile.vue?vue&type=style&index=0&id=7eab0eae&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/testresources.vue?vue&type=style&index=0&scope=true&lang=css&":
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/testresources.vue?vue&type=style&index=0&scope=true&lang=css& ***!
@@ -38445,7 +38497,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid" }, [_c("testresource")], 1)
+  return _c("div", { staticClass: "container-fluid" }, [_c("profile")], 1)
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -38792,6 +38844,413 @@ var staticRenderFns = [
           ),
           _c("br"),
           _vm._v(" Terms of use and Privacy Policy.")
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/profile.vue?vue&type=template&id=7eab0eae&scoped=true&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/profile.vue?vue&type=template&id=7eab0eae&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container-fluid" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-4 entry" }, [
+          _c("br"),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "image-wrap justify-content-center ",
+              staticStyle: { "text-align": "center" }
+            },
+            [
+              _c("img", {
+                staticClass: "rounded-circle img-fluid image",
+                staticStyle: { width: "40%" },
+                attrs: {
+                  src: "http://localhost:8000/images/image-3.jpg",
+                  alt: "Thumbnail Image"
+                }
+              }),
+              _vm._v(" "),
+              _c("br"),
+              _c("div", { staticStyle: { "font-weight": "bold" } }, [
+                _c("h2", { staticClass: "FA" }, [_vm._v("Dan Astillero")]),
+                _c("h5", { staticClass: "FA" }, [_vm._v("Financial Advisor")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticStyle: {} }, [
+                _vm._v("Referral Code: PL12345 ")
+              ]),
+              _vm._v(" "),
+              _c("hr")
+            ]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "tabulation-2" }, [
+            _c(
+              "ul",
+              { staticClass: "nav nav-pills nav-fill d-md-flex d-block" },
+              [
+                _c("li", { staticClass: "nav-item" }, [
+                  _c("a", [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary btn-round",
+                        attrs: { type: "button" }
+                      },
+                      [_c("i", { staticClass: "ion-ios-home" })]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item" }, [
+                  _c("a", [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary btn-round",
+                        attrs: { type: "button" }
+                      },
+                      [_c("i", { staticClass: "ion-ios-globe" })]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item" }, [
+                  _c("a", [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary btn-round",
+                        attrs: { type: "button" }
+                      },
+                      [_c("i", { staticClass: "ion-ios-mail" })]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item" }, [
+                  _c("a", [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary btn-round",
+                        attrs: { type: "button" }
+                      },
+                      [_c("i", { staticClass: "ion-ios-notifications" })]
+                    )
+                  ])
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "tab-content rounded mt-2" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "tab-pane container p-4 active",
+                  attrs: { id: "home1" }
+                },
+                [
+                  _c("p", [
+                    _vm._v(
+                      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+                    )
+                  ])
+                ]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "myaccordion w-100 text-center",
+              attrs: { id: "accordion" }
+            },
+            [
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  { staticClass: "card-header", attrs: { id: "headingOne" } },
+                  [
+                    _c("h2", { staticClass: "mb-0" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "d-flex align-items-center justify-content-between btn btn-link",
+                          attrs: {
+                            "data-toggle": "collapse",
+                            "data-target": "#collapseOne",
+                            "aria-expanded": "true",
+                            "aria-controls": "collapseOne"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n\t\t\t\t\t\t          Insurance Plans\n\t\t\t\t\t\t          "
+                          ),
+                          _c("i", {
+                            staticClass: "fa",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse show",
+                    attrs: {
+                      id: "collapseOne",
+                      "aria-labelledby": "headingOne",
+                      "data-parent": "#accordion"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body text-left" }, [
+                      _c("p", [
+                        _vm._v(
+                          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+                        )
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  { staticClass: "card-header", attrs: { id: "headingTwo" } },
+                  [
+                    _c("h2", { staticClass: "mb-0" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "d-flex align-items-center justify-content-between btn btn-link collapsed",
+                          attrs: {
+                            "data-toggle": "collapse",
+                            "data-target": "#collapseThree",
+                            "aria-expanded": "false",
+                            "aria-controls": "collapseThree"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n\t\t\t\t\t\t          Savings\n\t\t\t\t\t\t          "
+                          ),
+                          _c("i", {
+                            staticClass: "fa",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseThree",
+                      "aria-labelledby": "headingTwo",
+                      "data-parent": "#accordion"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body text-left" }, [
+                      _c("p", [
+                        _vm._v(
+                          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+                        )
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  { staticClass: "card-header", attrs: { id: "headingTwo" } },
+                  [
+                    _c("h2", { staticClass: "mb-0" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "d-flex align-items-center justify-content-between btn btn-link collapsed",
+                          attrs: {
+                            "data-toggle": "collapse",
+                            "data-target": "#collapseTwo",
+                            "aria-expanded": "false",
+                            "aria-controls": "collapseTwo"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n\t\t\t\t\t\t          History/Transactions\n\t\t\t\t\t\t          "
+                          ),
+                          _c("i", {
+                            staticClass: "fa",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseTwo",
+                      "aria-labelledby": "headingTwo",
+                      "data-parent": "#accordion"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body text-left" }, [
+                      _c("p", [
+                        _vm._v(
+                          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+                        )
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  { staticClass: "card-header", attrs: { id: "headingTwo" } },
+                  [
+                    _c("h2", { staticClass: "mb-0" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "d-flex align-items-center justify-content-between btn btn-link collapsed",
+                          attrs: {
+                            "data-toggle": "collapse",
+                            "data-target": "#collapseFour",
+                            "aria-expanded": "false",
+                            "aria-controls": "collapseFour"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n\t\t\t\t\t\t          Recruit\n\t\t\t\t\t\t          "
+                          ),
+                          _c("i", {
+                            staticClass: "fa",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseFour",
+                      "aria-labelledby": "headingTwo",
+                      "data-parent": "#accordion"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body text-left" }, [
+                      _c("p", [
+                        _vm._v(
+                          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+                        )
+                      ])
+                    ])
+                  ]
+                )
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-8 entry" }, [
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "image-wrap justify-content-center ",
+              staticStyle: { "text-align": "center" }
+            },
+            [
+              _c("img", {
+                staticClass: "rounded-circle img-fluid image",
+                staticStyle: { width: "20%" },
+                attrs: {
+                  src: "http://localhost:8000/images/image-3.jpg",
+                  alt: "Thumbnail Image"
+                }
+              }),
+              _vm._v(" "),
+              _c("br"),
+              _c("div", { staticStyle: { "font-weight": "bold" } }, [
+                _c("h2", { staticClass: "FA" }, [
+                  _vm._v("Put PhilAm Life Socio Square picture")
+                ]),
+                _c("h5", { staticClass: "FA" }, [_vm._v("Financial Advisor")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticStyle: {} }, [
+                _vm._v("Referral Code: PL12345 ")
+              ]),
+              _vm._v(" "),
+              _c("hr")
+            ]
+          )
         ])
       ])
     ])
@@ -92372,6 +92831,77 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/profile.vue":
+/*!*********************************************!*\
+  !*** ./resources/js/components/profile.vue ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _profile_vue_vue_type_template_id_7eab0eae_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./profile.vue?vue&type=template&id=7eab0eae&scoped=true& */ "./resources/js/components/profile.vue?vue&type=template&id=7eab0eae&scoped=true&");
+/* harmony import */ var _profile_vue_vue_type_style_index_0_id_7eab0eae_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./profile.vue?vue&type=style&index=0&id=7eab0eae&scoped=true&lang=css& */ "./resources/js/components/profile.vue?vue&type=style&index=0&id=7eab0eae&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  script,
+  _profile_vue_vue_type_template_id_7eab0eae_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _profile_vue_vue_type_template_id_7eab0eae_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "7eab0eae",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/profile.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/profile.vue?vue&type=style&index=0&id=7eab0eae&scoped=true&lang=css&":
+/*!******************************************************************************************************!*\
+  !*** ./resources/js/components/profile.vue?vue&type=style&index=0&id=7eab0eae&scoped=true&lang=css& ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_profile_vue_vue_type_style_index_0_id_7eab0eae_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./profile.vue?vue&type=style&index=0&id=7eab0eae&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/profile.vue?vue&type=style&index=0&id=7eab0eae&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_profile_vue_vue_type_style_index_0_id_7eab0eae_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_profile_vue_vue_type_style_index_0_id_7eab0eae_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_profile_vue_vue_type_style_index_0_id_7eab0eae_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_profile_vue_vue_type_style_index_0_id_7eab0eae_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_profile_vue_vue_type_style_index_0_id_7eab0eae_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/profile.vue?vue&type=template&id=7eab0eae&scoped=true&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/components/profile.vue?vue&type=template&id=7eab0eae&scoped=true& ***!
+  \****************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_profile_vue_vue_type_template_id_7eab0eae_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./profile.vue?vue&type=template&id=7eab0eae&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/profile.vue?vue&type=template&id=7eab0eae&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_profile_vue_vue_type_template_id_7eab0eae_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_profile_vue_vue_type_template_id_7eab0eae_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/testresources.vue":
 /*!***************************************************!*\
   !*** ./resources/js/components/testresources.vue ***!
@@ -92496,8 +93026,8 @@ var routes = [{
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Yoming\Desktop\GitHub\Elites_Hackaton_2019\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Yoming\Desktop\GitHub\Elites_Hackaton_2019\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\ADELAIDA\Desktop\GitHub\Elites_Hackaton_2019\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\ADELAIDA\Desktop\GitHub\Elites_Hackaton_2019\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
