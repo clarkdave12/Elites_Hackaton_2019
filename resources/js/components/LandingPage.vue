@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <home/>
+    <div class="container-fluid">
+        <testresource/>
     </div>
 </template>
 
@@ -9,11 +9,13 @@
 import login from "./Login.vue"
 import home from "./Home.vue"
 import register from "./Register.vue"
+import testresource from "./testresources.vue"
 export default {
     components: {
         login,
         home,
-        register
+        register,
+        testresource,
     }
 }
 </script>
