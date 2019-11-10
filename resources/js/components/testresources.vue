@@ -117,10 +117,10 @@ export default {
 </script>
 
 <style scope>
-/* 
+
 #comments {
 	margin-top: -150px;
-} */
+}
 
 .comment-button {
 	background: none;
