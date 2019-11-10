@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <v-container fluid>
+        <v-container fluid id="bg">
             <router-view></router-view>
         </v-container>
     </v-app>
@@ -8,7 +8,6 @@
 
 <style scoped>
  #bg{
-     background: url('http://localhost:8000/images/bg_1.jpg');
      background-image: linear-gradient(white);
  }
 </style>

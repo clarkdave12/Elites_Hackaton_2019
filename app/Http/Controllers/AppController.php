@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use App\User;
+use App\Referal;
 
 class AppController extends Controller
 {
@@ -32,5 +33,20 @@ class AppController extends Controller
         $user->save();
 
         return response()->json(['success', 'Registered'], 200);
+    }
+
+    public function recruits($id)
+    {
+
+        $recruits = DB::table('referals')
+                    ->where('code_owner', $id)
+                    ->get();
+
+        return $recruits;
+    }
+
+    public function recruitName($id)
+    {
+        return User::find($id);
     }
 }

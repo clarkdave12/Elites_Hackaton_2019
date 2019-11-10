@@ -27,7 +27,7 @@ export default {
             const data = {
                 grant_type: 'password',
                 client_id: '2',
-                client_secret: 'OSSdTmRMG9vFUSLKmw4JvoZnJstsqcwYdH43KmwL',
+                client_secret: 'qvoM1OWVYcru3Fu6ATVXOaAIFRbEvajFNIzsgWIk',
                 username: this.user.email,
                 password: this.user.password
             }

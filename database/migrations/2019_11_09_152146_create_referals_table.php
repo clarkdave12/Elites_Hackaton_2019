@@ -17,7 +17,7 @@ class CreateReferalsTable extends Migration
             $table->bigIncrements('id');
             $table->integer('code_owner');
             $table->integer('code_getter');
-            $table->string('code')->unique();
+            $table->string('code');
             $table->timestamps();
         });
     }
